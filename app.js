@@ -36,7 +36,7 @@ function updateWeatherUI(data) {
     const weatherCondition = data.weather[0].main.toLowerCase();
     const temperature = data.main.temp;
     
-    if (temperature > 30) {
+    if (temperature > 25) {
         weatherIcon.src = "image.png"; 
     } else if (weatherCondition.includes("cloud")) {
         weatherIcon.src = "clouds.png";
